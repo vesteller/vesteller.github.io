@@ -15,7 +15,7 @@ function estableceNombreUsuario() {
     let miNombre = prompt('Introduzca su nombre.');
     let a = prompt('Introduzca el valor de A: ');
     let b = prompt('Introduzca el valor de B: ');
-    c = parseInt(a) + parseInt(b)
+    let c = (parseInt(a) + parseInt(b));
     if(!miNombre) {
       estableceNombreUsuario();
     } else {
