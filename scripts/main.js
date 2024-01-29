@@ -13,26 +13,27 @@ let miTitulo = document.querySelector( 'h1');
 
 function estableceNombreUsuario() {
     let miNombre = prompt('Introduzca su nombre.');
-    let a = parseInt(prompt('Introduzca su altura en cm: '));
-    let b = parseInt(prompt('Introduzca su peso en kg: '));
-    let imc = b / a;
+    let a = parseFloat(prompt('Introduzca su altura en m: '));
+    let b = parseFloat(prompt('Introduzca su peso en kg: '));
+    let imc = b / (a*a);
+    let d = ''
     if (imc < 16) {
-        let d = 'Infrapeso: Delgadez Severa';
+        d = 'Infrapeso: Delgadez Severa';
     } else if (16 <= imc && imc <= 16.99) {
-        let d = 'Infrapeso: Delgadez moderada';
+        d = 'Infrapeso: Delgadez moderada';
     } else if (17 <= imc && imc <= 18.49) {
-        let d = 'Infrapeso: Delgadez aceptable';
+        d = 'Infrapeso: Delgadez aceptable';
     } else if (18.50 <= imc && imc <= 24.99) {
-        let d = 'Peso Normal';
+        d = 'Peso Normal';
     } else if (25.00 <= imc && imc <= 29.99) {
-        let d = 'Sobrepeso';
+        d = 'Sobrepeso';
     } else if (30.00 <= imc && imc <= 34.99) {
-        let d = 'Obeso: Tipo I';
+        d = 'Obeso: Tipo I';
     } else if (35.00 <= imc && imc <= 40.00) {
-        let d = 'Obeso: Tipo II';
+        d = 'Obeso: Tipo II';
     } else if (imc > 40.00) {
-        let d = 'Obeso: Tipo III';
-    } 
+        d = 'Obeso: Tipo III';
+    }
     
     if(!miNombre) {
       estableceNombreUsuario();
