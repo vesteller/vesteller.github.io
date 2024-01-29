@@ -18,17 +18,17 @@ function estableceNombreUsuario() {
     let imc = b / a;
     if (imc < 16) {
         let d = 'Infrapeso: Delgadez Severa';
-    } else if (16 <= imc and imc <= 16.99) {
+    } else if (16 <= imc && imc <= 16.99) {
         let d = 'Infrapeso: Delgadez moderada';
-    } else if (17 <= imc and imc <= 18.49) {
+    } else if (17 <= imc && imc <= 18.49) {
         let d = 'Infrapeso: Delgadez aceptable';
-    } else if (18.50 <= imc and imc <= 24.99) {
+    } else if (18.50 <= imc && imc <= 24.99) {
         let d = 'Peso Normal';
-    } else if (25.00 <= imc and imc <= 29.99) {
+    } else if (25.00 <= imc && imc <= 29.99) {
         let d = 'Sobrepeso';
-    } else if (30.00 <= imc and imc <= 34.99) {
+    } else if (30.00 <= imc && imc <= 34.99) {
         let d = 'Obeso: Tipo I';
-    } else if (35.00 <= imc and imc <= 40.00) {
+    } else if (35.00 <= imc && imc <= 40.00) {
         let d = 'Obeso: Tipo II';
     } else if (imc > 40.00) {
         let d = 'Obeso: Tipo III';
