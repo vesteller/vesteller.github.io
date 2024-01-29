@@ -13,9 +13,9 @@ let miTitulo = document.querySelector( 'h1');
 
 function estableceNombreUsuario() {
     let miNombre = prompt('Introduzca su nombre.');
-    let a = prompt('Introduzca el valor de A: ');
-    let b = prompt('Introduzca el valor de B: ');
-    let c = (parseInt(a) + parseInt(b));
+    let a = parseInt(prompt('Introduzca el valor de A: '));
+    let b = parseInt(prompt('Introduzca el valor de B: '));
+    let c = a + b;
     if(!miNombre) {
       estableceNombreUsuario();
     } else {
