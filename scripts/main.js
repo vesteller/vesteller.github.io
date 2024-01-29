@@ -13,11 +13,14 @@ let miTitulo = document.querySelector( 'h1');
 
 function estableceNombreUsuario() {
     let miNombre = prompt('Introduzca su nombre.');
+    let a = prompt('Introduzca el valor de A: ');
+    let b = prompt('Introduzca el valor de B: ');
+    c = a + b;
     if(!miNombre) {
       estableceNombreUsuario();
     } else {
       localStorage.setItem('nombre', miNombre);
-      miTitulo.innerHTML = 'Mozilla is genial, ' + miNombre;
+      miTitulo.innerHTML = 'Mozilla is genial, ' + miNombre + ' A + B = ' + c;
     }
   }
   
